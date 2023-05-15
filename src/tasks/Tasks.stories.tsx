@@ -58,7 +58,7 @@ export const Task2: Story = {
     //   - DOM用に拡張されたもの : https://github.com/testing-library/jest-dom
     // - 今回はDOMにチェックがついていることを見たいので......
 
-    // expect().toBeHoge()
+    // expect([要素]).toBeHoge()
 
     // 感想: とても良いのラジオボタンを探す
 
@@ -132,5 +132,6 @@ export const Task5: Story = {
     // - findAll〇〇を使えば一気にリストを一気に取ってこれそうですね....
 
     // TODOリストの長さが3であることを確認する
+    // ↑でとってきた要素の配列の個数が3であればいいから....
   },
 };

@@ -24,7 +24,7 @@ $ npm ci
 Storybook を起動する
 
 ```
-$ npm run stroybook
+$ npm run storybook
 ```
 
 http://localhost:6006 にアクセスする
