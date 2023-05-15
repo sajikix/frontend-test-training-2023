@@ -27,8 +27,8 @@ export const Task1: Story = {
     // kintone という名前のチェックボックスを探す
     // - findByRole では a11yロール と a11yネーム から探すことができます。
     // - a11yロール と a11yネームはdeveloper toolからも見れます
-    const kintoneCheckBox = await canvas.findByRole("", {
-      name: "",
+    const kintoneCheckBox = await canvas.findByRole("checkbox", {
+      name: "kintone",
     });
     // kintone という名前のチェックボックスをクリックする
     // - userEvent.click([要素]); でクリックできます
@@ -86,14 +86,14 @@ export const Task3: Story = {
   },
 };
 
-// 感想部分に140文字以上入力してエラーが出ることを確認してみよう。
+// 感想部分に141文字以上入力してエラーが出ることを確認してみよう。
 export const Task4: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
 
     // 感想というラベルのついたテキストボックスを探す
 
-    // 140文字以上の内容を書き込む。
+    // 141文字以上の内容を書き込む。
 
     // 文字数オーバーのエラーを確認する
     // - エラーは入力ではなく単なるテキストですが、これを取得するクエリもあったはず....

@@ -97,7 +97,7 @@ export const Task3: Story = {
   },
 };
 
-// 感想部分に140文字以上入力してエラーが出ることを確認してみよう。
+// 感想部分に141文字以上入力してエラーが出ることを確認してみよう。
 export const Task4: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
@@ -105,7 +105,7 @@ export const Task4: Story = {
     // 感想というラベルのついたテキストボックスを探す
     const impressionTextbox = await canvas.findByLabelText("感想");
 
-    // 140文字以上の内容を書き込む。
+    // 141文字以上の内容を書き込む。
     userEvent.type(
       impressionTextbox,
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
